@@ -85,8 +85,8 @@ function updateJobStatus(id, newStatus) {
     badgeContainer.innerHTML = '<span class="inline-block bg-[#f0fdf4] text-[#16a34a] border border-[#dcfce7] text-[11px] font-bold px-2 py-0.5 rounded mb-3">INTERVIEW</span>';
 
     buttonsContainer.innerHTML = `
-      <button data-action="update" data-id="${id}" data-newstatus="interview" class="px-3 py-1.5 rounded-[4px] text-[11px] font-bold bg-white text-[#3b82f6] border border-[#bfdbfe] hover:bg-[#eff6ff] transition">OFFERED</button>
-      <button data-action="update" data-id="${id}" data-newstatus="rejected" class="px-3 py-1.5 rounded-[4px] text-[11px] font-bold bg-white text-[#ef4444] border border-[#fecaca] hover:bg-[#fef2f2] transition">REJECTED</button>
+      <button data-action="update" data-id="${id}" data-newstatus="interview" class="px-3 py-1.5 rounded-sm text-[11px] font-bold bg-white text-[#3b82f6] border border-[#bfdbfe] hover:bg-[#eff6ff] transition">OFFERED</button>
+      <button data-action="update" data-id="${id}" data-newstatus="rejected" class="px-3 py-1.5 rounded-sm text-[11px] font-bold bg-white text-[#ef4444] border border-[#fecaca] hover:bg-[#fef2f2] transition">REJECTED</button>
     `;
   } else if (newStatus === 'rejected') {
     jobCard.classList.add('opacity-70');
