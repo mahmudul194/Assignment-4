@@ -38,5 +38,20 @@
                 <p id="rejected-count" class="text-[28px] font-bold text-[#ef4444] leading-none">0</p>
             </div>
         </div>
+
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-4 gap-3">
+            <div>
+                <h2 class="text-lg font-bold text-primary mb-3">Available Jobs</h2>
+                <div class="flex flex-wrap items-center gap-2" id="filter-buttons">
+                    <button data-tab="all"
+                        class="filter-btn px-5 py-1.5 rounded text-[13px] font-semibold bg-[#4285F4] text-white transition hover:bg-[#2563eb] block">All</button>
+                    <button data-tab="interview"
+                        class="filter-btn px-5 py-1.5 rounded text-[13px] font-semibold bg-white text-[#64748b] transition hover:bg-[#f8fafc] border border-transparent hover:border-[#e2e8f0] block">Interview</button>
+                    <button data-tab="rejected"
+                        class="filter-btn px-5 py-1.5 rounded text-[13px] font-semibold bg-white text-[#64748b] transition hover:bg-[#f8fafc] border border-transparent hover:border-[#e2e8f0] block">Rejected</button>
+                </div>
+            </div>
+            <p id="jobs-count" class="text-[13px] text-[#64748b] font-medium">8 jobs</p>
+        </div>
 </body>
 </html>
