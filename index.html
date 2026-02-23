@@ -9,7 +9,34 @@
         rel="stylesheet" />
     <title>Job Application tracker</title>
 </head>
-<body>
-    
+<body class="container mx-auto pb-12 bg-[#f7f9fc] text-[#1e293b]">
+     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14">
+
+       
+        <h1 class="text-2xl sm:text-3xl font-bold text-primary mb-6">Job Application Tracker</h1>
+
+       
+        <div id="stats-container" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+            
+            <div id="stat-total"
+                class="bg-white rounded-xl p-5 border border-[#f1f5f9] shadow-[0_1px_3px_rgb(0,0,0,0.02)] transition-colors duration-300">
+                <p class="text-xs font-bold text-[#1e293b] mb-2">Total</p>
+                <p id="total-count" class="text-[28px] font-bold text-[#1d4ed8] leading-none">8</p>
+            </div>
+
+            
+            <div id="stat-interview"
+                class="bg-white rounded-xl p-5 border border-[#f1f5f9] shadow-[0_1px_3px_rgb(0,0,0,0.02)] transition-colors duration-300">
+                <p class="text-xs font-bold text-[#1e293b] mb-2">Interview</p>
+                <p id="interview-count" class="text-[28px] font-bold text-[#14b8a6] leading-none">0</p>
+            </div>
+
+           
+            <div id="stat-rejected"
+                class="bg-white rounded-xl p-5 border border-[#f1f5f9] shadow-[0_1px_3px_rgb(0,0,0,0.02)] transition-colors duration-300">
+                <p class="text-xs font-bold text-[#1e293b] mb-2">Rejected</p>
+                <p id="rejected-count" class="text-[28px] font-bold text-[#ef4444] leading-none">0</p>
+            </div>
+        </div>
 </body>
 </html>
